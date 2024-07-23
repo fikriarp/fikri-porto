@@ -7,7 +7,7 @@ export default function NavBar({ onSelect }) {
     bg-[#405D72] flex flex-col justify-between 
     items-center py-4 text-[#ffff] shadow-lg shadow-black"
     >
-      <p className="text-2xl">PORTOFOLIO</p>
+      <p className="lg:text-2xl">PORTOFOLIO</p>
       <ul className="flex flex-col gap-5 items-center">
         <li
           className="cursor-pointer hover:drop-shadow-2xl"
