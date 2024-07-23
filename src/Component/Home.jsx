@@ -22,10 +22,10 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <figure className="lg:h-full  flex items-end justify-end">
+      <figure className="lg:h-full flex items-end justify-end">
         <img
           className="drop-shadow-xl w-[300px] lg:w-[350px]"
-          src="../public/porto-01.png"
+          src="/porto-01.png"
           alt="Porto"
         />
       </figure>
