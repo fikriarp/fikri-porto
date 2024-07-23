@@ -25,7 +25,7 @@ export default function Home() {
       <figure className="lg:h-full  flex items-end justify-end">
         <img
           className="drop-shadow-xl w-[300px] lg:w-[350px]"
-          src="/public/porto-01.png"
+          src="../public/porto-01.png"
           alt="Porto"
         />
       </figure>
