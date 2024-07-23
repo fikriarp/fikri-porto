@@ -20,8 +20,13 @@ export default function Home() {
           <p className="text-base lg:text-lg">
             Freelance Front End & Social Media Design
           </p>
+          <div className="flex justify-between mt-2">
+            <i className="fa-solid fa-pen-nib text-xl text-[#ffc14f]"></i>
+            <i className="fa-solid fa-code text-xl text-[#ffc14f]"></i>
+          </div>
         </div>
       </div>
+
       <figure className="lg:h-full flex items-end justify-end">
         <img
           className="drop-shadow-xl w-[300px] lg:w-[350px]"
