@@ -22,22 +22,25 @@ export default function NavBar({ onSelect }) {
 
       <ul className="flex flex-col gap-5 items-center">
         <li
-          className="cursor-pointer hover:drop-shadow-2xl"
+          className="cursor-pointer hover:drop-shadow-2xl flex flex-col items-center hover:-translate-y-1"
           onClick={() => onSelect("home")}
         >
           <i className="fa-solid fa-house"></i>
+          <p>Home</p>
         </li>
         <li
-          className="cursor-pointer hover:drop-shadow-2xl"
+          className="cursor-pointer hover:drop-shadow-2xl flex flex-col items-center hover:-translate-y-1"
           onClick={() => onSelect("about")}
         >
           <i className="fa-solid fa-address-card"></i>
+          <p>About</p>
         </li>
         <li
-          className="cursor-pointer hover:drop-shadow-2xl"
+          className="cursor-pointer hover:drop-shadow-2xl flex flex-col items-center hover:-translate-y-1"
           onClick={() => onSelect("skills")}
         >
           <i className="fas fa-chalkboard-teacher"></i>
+          <p>Work</p>
         </li>
       </ul>
     </nav>
