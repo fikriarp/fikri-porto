@@ -6,13 +6,15 @@ import { useState } from "react";
 
 export default function Template() {
   const [activeSection, setActiveSection] = useState("home");
-  const [bgSection, setBGSection] = useState("bg-[#2F3645]");
+  const bg =
+    "bg-gradient-to-b from-[#2F3645] to-[#A3B2C2] to-[#2F3645] h-screen w-full";
+  const [bgSection, setBGSection] = useState(bg);
 
   const handleSelect = (section) => {
     setActiveSection(section);
     switch (section) {
       case "home":
-        setBGSection("bg-[#2F3645]"); // Background untuk Home
+        setBGSection(bg); // Background untuk Home
         break;
       case "about":
         setBGSection("bg-[#ffc14f]"); // Background untuk About
