@@ -6,9 +6,8 @@ import { useState } from "react";
 
 export default function Template() {
   const [activeSection, setActiveSection] = useState("home");
-  const bg =
-    "bg-gradient-to-b from-[#2F3645] to-[#A3B2C2] to-[#2F3645] h-screen w-full";
-  const [bgSection, setBGSection] = useState(bg);
+  // const bg = "bg-gradient-to-b from-[#2F3645] to-[#A3B2C2] to-[#2F3645]";
+  const [bgSection, setBGSection] = useState("");
 
   const handleSelect = (section) => {
     setActiveSection(section);
