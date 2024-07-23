@@ -43,7 +43,7 @@ export default function About() {
           {/* Front End */}
           <div
             className={`grid grid-cols-3 gap-y-5 text-white py-5 ${
-              buttonValue === "Front End" ? "" : "hidden"
+              buttonValue === "Social Media Design" ? "" : "hidden"
             }`}
           >
             <div className="flex flex-col items-center">
@@ -75,7 +75,7 @@ export default function About() {
           {/* Social Media */}
           <div
             className={`grid grid-cols-3 gap-y-5 text-white py-5 ${
-              buttonValue === "Social Media Design" ? "" : "hidden"
+              buttonValue === "Front End" ? "" : "hidden"
             }`}
           >
             <div className="flex flex-col items-center ">
