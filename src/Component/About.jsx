@@ -3,13 +3,12 @@ import { useState } from "react";
 export default function About() {
   const [skill, setSkill] = useState("Front End");
   const [buttonValue, setButtonValue] = useState("Social Media Design");
-  const [active, setActive] = useState();
 
   const handleSkill = () => {
-    if (skill == "Front End") {
+    if (skill === "Front End") {
       setButtonValue("Front End");
       setSkill("Social Media Design");
-    } else if (skill == "Social Media Design") {
+    } else if (skill === "Social Media Design") {
       setButtonValue("Social Media Design");
       setSkill("Front End");
     }
@@ -44,48 +43,48 @@ export default function About() {
           {/* Front End */}
           <div
             className={`grid grid-cols-3 gap-y-5 text-white py-5 ${
-              buttonValue == "Front End" && "hidden"
+              buttonValue === "Front End" ? "" : "hidden"
             }`}
           >
             <div className="flex flex-col items-center">
-              <i class="fa-brands fa-html5 text-5xl text-orange-600"></i>
+              <i className="fa-brands fa-html5 text-5xl text-orange-600"></i>
               <p>HTML</p>
             </div>
             <div className="flex flex-col items-center">
-              <i class="fa-brands fa-css3-alt text-5xl text-blue-600"></i>
+              <i className="fa-brands fa-css3-alt text-5xl text-blue-600"></i>
               <p>CSS</p>
             </div>
             <div className="flex flex-col items-center">
-              <i class="fa-brands fa-js text-5xl text-yellow-600"></i>
+              <i className="fa-brands fa-js text-5xl text-yellow-600"></i>
               <p>Javascript</p>
             </div>
             <div className="flex flex-col items-center">
-              <i class="fa-brands fa-bootstrap text-5xl text-violet-600"></i>
+              <i className="fa-brands fa-bootstrap text-5xl text-violet-600"></i>
               <p>Bootstrap</p>
             </div>
             <div className="flex flex-col items-center pt-2">
-              <img src="/public/tailwind.png" className="w-[3rem]" />
+              <img src="/tailwind.png" className="w-[3rem]" />
               <p className="mt-3">Tailwind</p>
             </div>
             <div className="flex flex-col items-center pt-2">
-              <img src="/public/vite.png" className="w-[2rem]" />
+              <img src="/vite.png" className="w-[2rem]" />
               <p className="mt-2">Vite Js</p>
             </div>
           </div>
 
-          {/* Sosial Media */}
+          {/* Social Media */}
           <div
             className={`grid grid-cols-3 gap-y-5 text-white py-5 ${
-              buttonValue == "Social Media Design" && "hidden"
+              buttonValue === "Social Media Design" ? "" : "hidden"
             }`}
           >
             <div className="flex flex-col items-center">
-              <img src="/public/ai.png" className="w-[3rem]" />
-              <p className="">Adobe Ilustartor</p>
+              <img src="/ai.png" className="w-[3rem]" />
+              <p>Adobe Illustrator</p>
             </div>
             <div className="flex flex-col items-center">
-              <img src="/public/canva.png" className="w-[3rem]" />
-              <p className="">Canva</p>
+              <img src="/canva.png" className="w-[3rem]" />
+              <p>Canva</p>
             </div>
           </div>
         </div>
