@@ -78,9 +78,9 @@ export default function About() {
               buttonValue === "Social Media Design" ? "" : "hidden"
             }`}
           >
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center ">
               <img src="/ai.png" className="w-[3rem]" />
-              <p>Adobe Illustrator</p>
+              <p className="text-center">Adobe Illustrator</p>
             </div>
             <div className="flex flex-col items-center">
               <img src="/canva.png" className="w-[3rem]" />
