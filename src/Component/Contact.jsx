@@ -3,7 +3,7 @@ export default function Contact() {
     <div className="container text-white">
       <h1 className="text-xl mt-2">Contact</h1>
 
-      <div className="pr-2 text-lg flex flex-col w-full h-[75dvh] justify-center items-center gap-4">
+      <div className="text-lg flex flex-col w-[75dvw] h-[65dvh] justify-center items-center gap-4">
         <a
           href="https://wa.me/6282361611007"
           target="_black"

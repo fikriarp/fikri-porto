@@ -23,7 +23,7 @@ export default function About() {
       <p className="text-2xl">Who Am I</p>
 
       <div className="mt-2 lg:w-[50dvw]">
-        <p className="text-sm">
+        <p className="text-xs lg:text-base">
           I am a passionate Freelance Front End Developer and Social Media
           Designer with a knack for creating visually stunning and user-friendly
           websites. My expertise lies in crafting seamless and responsive web
@@ -48,32 +48,32 @@ export default function About() {
           >
             <div className="flex flex-col items-center">
               <i className="fa-brands fa-html5 text-5xl text-orange-600"></i>
-              <p className="text-sm">HTML</p>
+              <p className="text-xs lg:text-base">HTML</p>
             </div>
             <div className="flex flex-col items-center">
               <i className="fa-brands fa-css3-alt text-5xl text-blue-600"></i>
-              <p className="text-sm">CSS</p>
+              <p className="text-xs lg:text-base">CSS</p>
             </div>
             <div className="flex flex-col items-center">
               <i className="fa-brands fa-js text-5xl text-yellow-600"></i>
-              <p className="text-sm">Javascript</p>
+              <p className="text-xs lg:text-base">Javascript</p>
             </div>
             <div className="flex flex-col items-center">
               <i className="fa-brands fa-bootstrap text-5xl text-violet-600"></i>
-              <p className="text-sm">Bootstrap</p>
+              <p className="text-xs lg:text-base">Bootstrap</p>
             </div>
             <div className="flex flex-col items-center pt-2">
               <img src="/tailwind.png" className="w-[3rem]" />
-              <p className="mt-3 text-sm">Tailwind</p>
+              <p className="mt-3 text-xs lg:text-base">Tailwind</p>
             </div>
             <div className="flex flex-col items-center pt-2">
               <img src="/vite.png" className="w-[2rem]" />
-              <p className="mt-2 text-sm">Vite Js</p>
+              <p className="mt-2 text-xs lg:text-base">Vite Js</p>
             </div>
             <div className="flex flex-col items-center pt-2">
               <img className="w-[2rem] drop-shadow-2xl" src="/laravel.png" />
 
-              <p className="mt-2 text-sm">Laravel</p>
+              <p className="mt-2 text-xs lg:text-base">Laravel</p>
             </div>
           </div>
 
@@ -85,11 +85,13 @@ export default function About() {
           >
             <div className="flex flex-col items-center ">
               <img src="/ai.png" className="w-[3rem]" />
-              <p className="text-center text-sm">Adobe Illustrator</p>
+              <p className="text-center text-xs lg:text-base">
+                Adobe Illustrator
+              </p>
             </div>
             <div className="flex flex-col items-center">
               <img src="/canva.png" className="w-[3rem]" />
-              <p className="text-sm">Canva</p>
+              <p className="text-xs lg:text-base">Canva</p>
             </div>
           </div>
         </div>
