@@ -48,32 +48,32 @@ export default function About() {
           >
             <div className="flex flex-col items-center">
               <i className="fa-brands fa-html5 text-5xl text-orange-600"></i>
-              <p>HTML</p>
+              <p className="text-sm">HTML</p>
             </div>
             <div className="flex flex-col items-center">
               <i className="fa-brands fa-css3-alt text-5xl text-blue-600"></i>
-              <p>CSS</p>
+              <p className="text-sm">CSS</p>
             </div>
             <div className="flex flex-col items-center">
               <i className="fa-brands fa-js text-5xl text-yellow-600"></i>
-              <p>Javascript</p>
+              <p className="text-sm">Javascript</p>
             </div>
             <div className="flex flex-col items-center">
               <i className="fa-brands fa-bootstrap text-5xl text-violet-600"></i>
-              <p>Bootstrap</p>
+              <p className="text-sm">Bootstrap</p>
             </div>
             <div className="flex flex-col items-center pt-2">
               <img src="/tailwind.png" className="w-[3rem]" />
-              <p className="mt-3">Tailwind</p>
+              <p className="mt-3 text-sm">Tailwind</p>
             </div>
             <div className="flex flex-col items-center pt-2">
               <img src="/vite.png" className="w-[2rem]" />
-              <p className="mt-2">Vite Js</p>
+              <p className="mt-2 text-sm">Vite Js</p>
             </div>
             <div className="flex flex-col items-center pt-2">
               <img className="w-[2rem] drop-shadow-2xl" src="/laravel.png" />
 
-              <p className="mt-2">Laravel</p>
+              <p className="mt-2 text-sm">Laravel</p>
             </div>
           </div>
 
@@ -85,11 +85,11 @@ export default function About() {
           >
             <div className="flex flex-col items-center ">
               <img src="/ai.png" className="w-[3rem]" />
-              <p className="text-center">Adobe Illustrator</p>
+              <p className="text-center text-sm">Adobe Illustrator</p>
             </div>
             <div className="flex flex-col items-center">
               <img src="/canva.png" className="w-[3rem]" />
-              <p>Canva</p>
+              <p className="text-sm">Canva</p>
             </div>
           </div>
         </div>
