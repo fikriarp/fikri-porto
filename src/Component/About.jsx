@@ -35,7 +35,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-4">
         <p className="text-xl">My Skill</p>
         <div className="bg-slate-900">
           <p className="text-white pt-2 flex justify-center">{skill}</p>
