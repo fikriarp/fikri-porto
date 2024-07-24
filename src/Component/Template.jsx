@@ -1,8 +1,8 @@
-import About from "./About";
+import About from "./About/About";
 import Home from "./Home";
 import NavBar from "./NavBar";
 import { useState } from "react";
-import Work from "./Work";
+import Work from "./Work/Work";
 import Contact from "./Contact";
 
 export default function Template() {
