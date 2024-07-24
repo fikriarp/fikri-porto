@@ -22,7 +22,7 @@ export default function About() {
       </div>
       <p className="text-2xl">Who Am I</p>
 
-      <div className="mt-4 lg:w-[50dvw]">
+      <div className="mt-2 lg:w-[50dvw]">
         <p className="text-sm">
           I am a passionate Freelance Front End Developer and Social Media
           Designer with a knack for creating visually stunning and user-friendly
