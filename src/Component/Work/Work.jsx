@@ -19,7 +19,14 @@ export default function Work() {
       <h1 className="text-xl">
         <span className="text-[#ffc14f]">My</span> Portofolio
       </h1>
-
+      <h2 className="text-lg mt-2">
+        Project
+        <span className="text-[#ffc14f]">
+          {buttonValue == "Social Media Design"
+            ? " Front End"
+            : " Social Media Design"}
+        </span>
+      </h2>
       <div className="mt-10 flex justify-center">
         <div
           className={`grid grid-cols-1 lg:grid-cols-3 gap-5 ${
