@@ -1,8 +1,8 @@
 import About from "./About";
 import Home from "./Home";
 import NavBar from "./NavBar";
-import Skill from "./Skill";
 import { useState } from "react";
+import Work from "./Work";
 
 export default function Template() {
   const [activeSection, setActiveSection] = useState("home");
@@ -18,8 +18,8 @@ export default function Template() {
       case "about":
         setBGSection("bg-[#ffc14f]"); // Background untuk About
         break;
-      case "skills":
-        setBGSection("bg-[#A3B2C2]"); // Background untuk Skill
+      case "works":
+        setBGSection(bg); // Background untuk Skill
         break;
       default:
         setBGSection("bg-[#2F3645]"); // Default background
@@ -33,7 +33,7 @@ export default function Template() {
         <NavBar onSelect={handleSelect} />
         {activeSection === "home" && <Home />}
         {activeSection === "about" && <About />}
-        {activeSection === "skills" && <Skill />}
+        {activeSection === "works" && <Work />}
       </div>
     </>
   );

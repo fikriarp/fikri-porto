@@ -17,57 +17,52 @@ export default function NavBar({ onSelect }) {
       items-center py-4 text-[#ffff] shadow-lg shadow-black"
     >
       <div className="flex flex-col items-center gap-2 px-4">
-        <p className="lg:text-xl text-sm">P</p>
-        <p className="lg:text-xl text-sm">O</p>
-        <p className="lg:text-xl text-sm">R</p>
-        <p className="lg:text-xl text-sm">T</p>
-        <p className="lg:text-xl text-sm">O</p>
-        <p className="lg:text-xl text-sm">F</p>
-        <p className="lg:text-xl text-sm">O</p>
-        <p className="lg:text-xl text-sm">L</p>
-        <p className="lg:text-xl text-sm">I</p>
-        <p className="lg:text-xl text-sm">O</p>
+        <p className="lg:text-xl text-md">F</p>
+        <p className="lg:text-xl text-md">I</p>
+        <p className="lg:text-xl text-md text-[#ffc14f]">K</p>
+        <p className="lg:text-xl text-md text-[#ffc14f]">R</p>
+        <p className="lg:text-xl text-md text-[#ffc14f]">I</p>
       </div>
 
       <ul className="flex flex-col gap-5 items-center">
         <li
           className={`cursor-pointer hover:drop-shadow-2xl flex flex-col items-center hover:-translate-y-1 ${
-            activeSection === "home" ? "text-yellow-500" : ""
+            activeSection === "home" ? "text-[#ffc14f]" : ""
           }`}
           onClick={() => handleSelect("home")}
         >
           <i
             className={`fa-solid fa-house ${
-              activeSection === "home" ? "text-yellow-500" : ""
+              activeSection === "home" ? "text-[#ffc14f]" : ""
             }`}
           ></i>
-          <p>Home</p>
+          <p className="text-sm lg:text-base">Home</p>
         </li>
         <li
           className={`cursor-pointer hover:drop-shadow-2xl flex flex-col items-center hover:-translate-y-1 ${
-            activeSection === "about" ? "text-yellow-500" : ""
+            activeSection === "about" ? "text-[#ffc14f]" : ""
           }`}
           onClick={() => handleSelect("about")}
         >
           <i
             className={`fa-solid fa-address-card ${
-              activeSection === "about" ? "text-yellow-500" : ""
+              activeSection === "about" ? "text-[#ffc14f]" : ""
             }`}
           ></i>
-          <p>About</p>
+          <p className="text-sm lg:text-base">About</p>
         </li>
         <li
           className={`cursor-pointer hover:drop-shadow-2xl flex flex-col items-center hover:-translate-y-1 ${
-            activeSection === "skills" ? "text-yellow-500" : ""
+            activeSection === "works" ? "text-[#ffc14f]" : ""
           }`}
-          onClick={() => handleSelect("skills")}
+          onClick={() => handleSelect("works")}
         >
           <i
             className={`fas fa-chalkboard-teacher ${
-              activeSection === "skills" ? "text-yellow-500" : ""
+              activeSection === "works" ? "text-[#ffc14f]" : ""
             }`}
           ></i>
-          <p>Work</p>
+          <p className="text-sm lg:text-base">Portofolio</p>
         </li>
       </ul>
     </nav>
