@@ -6,7 +6,7 @@ export default function Contact() {
         Contact me for questions, suggestions, or collaboration through the
         email below. I am ready to assist you
       </p>
-      <div className=" text-white py-5 bg-slate-800 text-lg flex flex-col mt-20 justify-center items-center gap-4">
+      <div className=" text-white py-5 bg-slate-800 text-lg flex flex-col mt-20 pl-3  gap-4">
         <div className="flex justify-end gap-2 px-4 w-full">
           <div className="w-2 h-2 rounded-full bg-green-600"></div>
           <div className="w-2 h-2 rounded-full bg-red-600"></div>
