@@ -42,7 +42,7 @@ export default function About() {
 
           {/* Front End */}
           <div
-            className={`grid grid-cols-3 gap-y-5 text-white py-5 ${
+            className={`grid grid-cols-4 gap-y-5 text-white py-5 ${
               buttonValue === "Social Media Design" ? "" : "hidden"
             }`}
           >
@@ -70,6 +70,11 @@ export default function About() {
               <img src="/vite.png" className="w-[2rem]" />
               <p className="mt-2">Vite Js</p>
             </div>
+            <div className="flex flex-col items-center pt-2">
+              <img className="w-[2rem] drop-shadow-2xl" src="/laravel.png" />
+
+              <p className="mt-2">Laravel</p>
+            </div>
           </div>
 
           {/* Social Media */}
@@ -91,7 +96,7 @@ export default function About() {
 
         <button
           onClick={handleSkill}
-          className="mt-3 bg-slate-900 px-2 py-1 text-white cursor-pointer"
+          className="mt-3 bg-slate-900 px-2 py-1 text-white cursor-pointer hover:-translate-y-1 hover:text-[#ffc14f] hover:drop-shadow-lg"
         >
           {buttonValue}
         </button>

@@ -64,6 +64,19 @@ export default function NavBar({ onSelect }) {
           ></i>
           <p className="text-sm lg:text-base">Portofolio</p>
         </li>
+        <li
+          className={`cursor-pointer hover:drop-shadow-2xl flex flex-col items-center hover:-translate-y-1 ${
+            activeSection === "contact" ? "text-[#ffc14f]" : ""
+          }`}
+          onClick={() => handleSelect("contact")}
+        >
+          <i
+            className={`fa-solid fa-address-book ${
+              activeSection === "contact" ? "text-[#ffc14f]" : ""
+            }`}
+          ></i>
+          <p className="text-sm lg:text-base">Contact</p>
+        </li>
       </ul>
     </nav>
   );

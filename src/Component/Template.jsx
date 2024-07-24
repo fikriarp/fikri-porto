@@ -3,6 +3,7 @@ import Home from "./Home";
 import NavBar from "./NavBar";
 import { useState } from "react";
 import Work from "./Work";
+import Contact from "./Contact";
 
 export default function Template() {
   const [activeSection, setActiveSection] = useState("home");
@@ -34,6 +35,7 @@ export default function Template() {
         {activeSection === "home" && <Home />}
         {activeSection === "about" && <About />}
         {activeSection === "works" && <Work />}
+        {activeSection === "contact" && <Contact />}
       </div>
     </>
   );
