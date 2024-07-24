@@ -22,6 +22,9 @@ export default function Template() {
       case "works":
         setBGSection(bg); // Background untuk Skill
         break;
+      case "contact":
+        setBGSection("bg-[#ffc14f]"); // Background untuk Skill
+        break;
       default:
         setBGSection("bg-[#2F3645]"); // Default background
         break;

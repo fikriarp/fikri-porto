@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function Work() {
   return (
-    <div className="container text-white">
+    <div className="container text-white mt-2">
       <h1 className="text-xl">
         <span className="text-[#ffc14f]">My</span> Portofolio
       </h1>
