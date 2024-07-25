@@ -105,7 +105,7 @@ export default function Work() {
         </div>
       </div>
       <div className="absolute bottom-0 right-0 hover:drop-shadow-lg hover:-translate-y-1">
-        <button onClick={handleButtonValue} className="bg-slate-950 px-3">
+        <button onClick={handleButtonValue} className="bg-slate-950 py-1 px-3">
           {buttonValue}
         </button>
       </div>

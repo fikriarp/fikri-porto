@@ -24,7 +24,7 @@ export default function About() {
 
       <div class="bg-gray-900 text-gray-300 font-mono p-1">
         <div class="p-2 bg-gray-800 rounded-lg shadow-lg">
-          <p class="text-[12px] leading-relaxed">
+          <p class="text-[12px] lg:text-lg md:text-md">
             I'm a passionate Freelance
             <span className="text-[#ffc14f]"> Front End Developer </span> and
             <span className="text-[#ffc14f]"> Social Media Designer</span>. I
