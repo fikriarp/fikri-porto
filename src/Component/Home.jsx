@@ -1,11 +1,13 @@
+import "./style.css";
+
 export default function Home() {
   return (
     <div className="lg:flex w-full lg:mx-20 justify-between flex flex-col">
       <div
-        className="text-white lg:h-full lg:flex lg:items-center mt-20
+        className=" text-white lg:h-full lg:flex lg:items-center mt-20
       md:h-full md:flex md:items-center"
       >
-        <div className="bg-slate-600 px-5 py-5">
+        <div className="bg-slate-600 shadow-md shadow-black px-5 py-5">
           <div className="flex justify-between items-center">
             <p>Hello</p>
             <div className="flex justify-end gap-2">

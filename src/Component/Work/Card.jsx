@@ -8,7 +8,7 @@ export default function Card({
   imgProject,
 }) {
   return (
-    <div className="card card-work  relative overflow-hidde w-[230px] lg:w-[300px] hover:drop-shadow-xl hover:-translate-y-1">
+    <div className="card card-work relative overflow-hidde w-[230px] lg:w-[300px] hover:drop-shadow-2xl hover:-translate-y-1">
       <div className="flex items-center justify-center">
         <img key={key} className={`card-work ${className}`} src={imgProject} />
       </div>

@@ -30,7 +30,7 @@ export default function Work() {
             : " Social Media Design"}
         </span>
       </h2>
-      <div className="mt-10 flex justify-center bg-slate-800 py-5">
+      <div className="mt-10 flex justify-center bg-slate-800 py-5 shadow-lg shadow-black">
         <div
           className={`grid grid-cols-1 lg:grid-cols-3 gap-5 ${
             buttonValue === "Front End" && "hidden"

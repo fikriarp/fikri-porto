@@ -17,7 +17,7 @@ export default function About() {
   return (
     <div className="container mt-4">
       <div className="flex items-center gap-2">
-        <div className="bg-slate-700 w-5 h-1"></div>
+        <div className="bg-slate-700 w-5 h-1 "></div>
         <p>About Me</p>
       </div>
       <p className="text-2xl">Who Am I</p>
@@ -37,7 +37,7 @@ export default function About() {
 
       <div className="mt-4">
         <p className="text-xl">My Skill</p>
-        <div className="bg-slate-900">
+        <div className="bg-slate-900 shadow-lg shadow-black">
           <p className="text-white pt-2 flex justify-center">{skill}</p>
 
           {/* Front End */}
