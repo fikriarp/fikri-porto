@@ -17,15 +17,17 @@ export default function About() {
   return (
     <div className="container mt-4">
       <div className="flex items-center gap-2">
-        <div className="bg-slate-700 w-5 h-1 "></div>
+        <div className="bg-slate-700 w-5 h-1"></div>
         <p>About Me</p>
       </div>
       <p className="text-2xl">Who Am I</p>
 
-      <div className="mt-2 lg:w-[50dvw]">
-        <p className="text-xs lg:text-base">
-          I am a passionate Freelance Front End Developer and Social Media
-          Designer with a knack for creating visually stunning and user-friendly
+      <div className="bg-gray-900 text-gray-300 font-mono px-2">
+        <p className="text-xs lg:text-lg leading-relaxed">
+          I am a passionate Freelance
+          <span className="text-[#ffc14f]"> Front End Developer</span> and
+          <span className="text-[#ffc14f]"> Social Media Designer </span>
+          with a knack for creating visually stunning and user-friendly
           websites. My expertise lies in crafting seamless and responsive web
           experiences, while also designing engaging social media content that
           resonates with audiences. With a strong focus on both aesthetics and
@@ -63,16 +65,23 @@ export default function About() {
               <p className="text-xs lg:text-base">Bootstrap</p>
             </div>
             <div className="flex flex-col items-center pt-2">
-              <img src="/tailwind.png" className="w-[3rem]" />
+              <img
+                src="/tailwind.png"
+                className="w-[3rem]"
+                alt="Tailwind CSS"
+              />
               <p className="mt-3 text-xs lg:text-base">Tailwind</p>
             </div>
             <div className="flex flex-col items-center pt-2">
-              <img src="/vite.png" className="w-[2rem]" />
+              <img src="/vite.png" className="w-[2rem]" alt="Vite JS" />
               <p className="mt-2 text-xs lg:text-base">Vite Js</p>
             </div>
             <div className="flex flex-col items-center pt-2">
-              <img className="w-[2rem] drop-shadow-2xl" src="/laravel.png" />
-
+              <img
+                className="w-[2rem] drop-shadow-2xl"
+                src="/laravel.png"
+                alt="Laravel"
+              />
               <p className="mt-2 text-xs lg:text-base">Laravel</p>
             </div>
           </div>
@@ -83,14 +92,14 @@ export default function About() {
               buttonValue === "Front End" ? "" : "hidden"
             }`}
           >
-            <div className="flex flex-col items-center ">
-              <img src="/ai.png" className="w-[3rem]" />
+            <div className="flex flex-col items-center">
+              <img src="/ai.png" className="w-[3rem]" alt="Adobe Illustrator" />
               <p className="text-center text-xs lg:text-base">
                 Adobe Illustrator
               </p>
             </div>
             <div className="flex flex-col items-center">
-              <img src="/canva.png" className="w-[3rem]" />
+              <img src="/canva.png" className="w-[3rem]" alt="Canva" />
               <p className="text-xs lg:text-base">Canva</p>
             </div>
           </div>

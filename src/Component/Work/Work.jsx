@@ -13,7 +13,7 @@ export default function Work() {
   }
 
   return (
-    <div className="container text-white mt-2">
+    <div className="container text-white mt-2 text-sm font-mono">
       <h1 className="text-xl">
         <span className="text-[#ffc14f]">My</span> Portfolio
       </h1>

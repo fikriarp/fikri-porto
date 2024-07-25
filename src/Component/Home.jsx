@@ -9,7 +9,7 @@ export default function Home() {
       >
         <div className="bg-slate-600 shadow-md shadow-black px-5 py-5">
           <div className="flex justify-between items-center">
-            <p>Hello</p>
+            <p className="font-mono text-sm lg:text-base">Hello</p>
             <div className="flex justify-end gap-2">
               <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
               <div className="w-2 h-2 bg-slate-300 rounded-full"></div>
@@ -19,7 +19,7 @@ export default function Home() {
           <h1 className="text-2xl lg:text-3xl text-[#ffc14f]">
             I'm Fikri Arly Pane
           </h1>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg font-mono">
             Freelance Front End & Social Media Design
           </p>
           <div className="flex justify-between mt-2">

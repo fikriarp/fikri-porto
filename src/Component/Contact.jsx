@@ -2,11 +2,11 @@ export default function Contact() {
   return (
     <div className="container text-black">
       <h1 className="text-xl mt-2">Contact</h1>
-      <p className="mt-5">
+      <p className="mt-5 font-mono">
         Contact me for questions, suggestions, or collaboration through the
         email below. I am ready to assist you
       </p>
-      <div className=" text-white py-5 bg-slate-800 text-lg flex flex-col mt-20 pl-3 shadow-lg shadow-black  gap-4">
+      <div className=" text-white py-5 bg-slate-800 text-lg flex flex-col mt-20 pl-3 shadow-lg shadow-black  gap-4 font-mono">
         <div className="flex justify-end gap-2 px-4 w-full">
           <div className="w-2 h-2 rounded-full bg-green-600"></div>
           <div className="w-2 h-2 rounded-full bg-red-600"></div>
