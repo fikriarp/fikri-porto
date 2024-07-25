@@ -33,7 +33,7 @@ export default function Template() {
 
   return (
     <>
-      <div className={`font-kanit flex gap-5 ${bgSection}`}>
+      <div className={`font-kanit pr-3 flex gap-5 ${bgSection}`}>
         <NavBar onSelect={handleSelect} />
         {activeSection === "home" && <Home />}
         {activeSection === "about" && <About />}
