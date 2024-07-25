@@ -7,19 +7,17 @@ export default function Work() {
   const [buttonValue, setButtonValue] = useState("Social Media Design");
 
   function handleButtonValue() {
-    if (buttonValue == "Social Media Design") {
-      setButtonValue("Front End");
-    } else if (buttonValue == "Front End") {
-      setButtonValue("Social Media Design");
-    }
+    setButtonValue((prevValue) =>
+      prevValue === "Social Media Design" ? "Front End" : "Social Media Design"
+    );
   }
 
   return (
     <div className="container text-white mt-2">
       <h1 className="text-xl">
-        <span className="text-[#ffc14f]">My</span> Portofolio
+        <span className="text-[#ffc14f]">My</span> Portfolio
       </h1>
-      {buttonValue == "Social Media Design" ? (
+      {buttonValue === "Social Media Design" ? (
         <i className="absolute right-3 fa-solid fa-code text-xl text-white"></i>
       ) : (
         <i className="absolute right-3 fa-solid fa-pen-nib text-xl text-white"></i>
@@ -27,7 +25,7 @@ export default function Work() {
       <h2 className="text-lg">
         Project
         <span className="text-[#ffc14f]">
-          {buttonValue == "Social Media Design"
+          {buttonValue === "Social Media Design"
             ? " Front End"
             : " Social Media Design"}
         </span>
@@ -35,19 +33,22 @@ export default function Work() {
       <div className="mt-10 flex justify-center bg-slate-800 py-5">
         <div
           className={`grid grid-cols-1 lg:grid-cols-3 gap-5 ${
-            buttonValue == "Front End" && "hidden"
+            buttonValue === "Front End" && "hidden"
           }`}
         >
           <Card
-            nameProject={"Web Lowongan Kerja"}
-            imgProject={"/work-4.png"}
-            className={"lg:w-500px"}
-            tools={<Tool imgTool={"/laravel.png"} />}
+            nameProject="Web Lowongan Kerja"
+            imgProject="/work-4.png"
+            className="lg:w-500px"
+            tools={[
+              <Tool key="1" imgTool="/laravel.png" />,
+              <Tool key="2" imgTool="/tailwind.png" />,
+            ]}
           />
           <Card
-            nameProject={"Web UMKM"}
-            imgProject={"/work-2.png"}
-            className={"lg:w-[500px]"}
+            nameProject="Web UMKM"
+            imgProject="/work-2.png"
+            className="lg:w-[500px]"
             tools={[
               <i
                 key="icon1"
@@ -64,9 +65,9 @@ export default function Work() {
             ]}
           />
           <Card
-            nameProject={"Web Portofolio"}
-            imgProject={"/work-3.png"}
-            className={"lg:w-[500px]"}
+            nameProject="Web Portfolio"
+            imgProject="/work-3.png"
+            className="lg:w-[500px]"
             tools={[
               <i
                 key="icon1"
@@ -86,20 +87,20 @@ export default function Work() {
 
         <div
           className={`grid grid-cols-1 lg:grid-cols-3 gap-5 ${
-            buttonValue == "Social Media Design" && "hidden"
+            buttonValue === "Social Media Design" && "hidden"
           }`}
         >
           <Card
-            nameProject={"Instagram Social Media Design"}
-            imgProject={"/sosmed-1.png"}
-            className={"h-[200px]"}
-            tools={<Tool imgTool={"/canva.png"} />}
+            nameProject="Instagram Social Media Design"
+            imgProject="/sosmed-1.png"
+            className="h-[200px]"
+            tools={<Tool imgTool="/canva.png" />}
           />
           <Card
-            nameProject={"Logo Design"}
-            imgProject={"/sosmed-2.png"}
-            className={"h-[200px]"}
-            tools={<Tool imgTool={"/canva.png"} />}
+            nameProject="Logo Design"
+            imgProject="/sosmed-2.png"
+            className="h-[200px]"
+            tools={<Tool imgTool="/ai.png" />}
           />
         </div>
       </div>
