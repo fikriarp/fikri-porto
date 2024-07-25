@@ -22,19 +22,17 @@ export default function About() {
       </div>
       <p className="text-2xl">Who Am I</p>
 
-      <div className="bg-gray-900 text-gray-300 font-mono px-2">
-        <p className="text-xs lg:text-lg leading-relaxed">
-          I am a passionate Freelance
-          <span className="text-[#ffc14f]"> Front End Developer</span> and
-          <span className="text-[#ffc14f]"> Social Media Designer </span>
-          with a knack for creating visually stunning and user-friendly
-          websites. My expertise lies in crafting seamless and responsive web
-          experiences, while also designing engaging social media content that
-          resonates with audiences. With a strong focus on both aesthetics and
-          functionality, I bring creativity and technical skills to every
-          project, ensuring that each design not only looks great but also
-          performs flawlessly.
-        </p>
+      <div class="bg-gray-900 text-gray-300 font-mono p-1">
+        <div class="p-2 bg-gray-800 rounded-lg shadow-lg">
+          <p class="text-sm leading-relaxed">
+            I'm a passionate Freelance
+            <span className="text-[#ffc14f]"> Front End Developer </span> and
+            <span className="text-[#ffc14f]"> Social Media Designer</span>. I
+            create visually stunning, user friendly websites and engaging social
+            media content. My expertise ensures seamless, responsive web
+            experiences that look great and perform flawlessly.
+          </p>
+        </div>
       </div>
 
       <div className="mt-4">
