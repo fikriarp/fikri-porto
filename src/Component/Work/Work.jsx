@@ -3,6 +3,23 @@ import Tool from "./Tool";
 import "../style.css";
 import { useEffect, useState } from "react";
 
+function HtmlCssJs() {
+  return (
+    <>
+      <i
+        key="icon1"
+        className="fa-brands fa-html5 text-5xl text-orange-600"
+      ></i>
+
+      <i
+        key="icon2"
+        className="fa-brands fa-css3-alt text-5xl text-blue-600"
+      ></i>
+      <i key="icon3" className="fa-brands fa-js text-5xl text-yellow-600"></i>
+    </>
+  );
+}
+
 export default function Work() {
   const [buttonValue, setButtonValue] = useState("Social Media Design");
   const [width, setWidth] = useState(window.innerWidth <= 480);
@@ -50,7 +67,7 @@ export default function Work() {
         {/* Front End Dev */}
 
         <div
-          className={`grid grid-cols-2 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols-3 gap-x-56 lg:gap-10 md:gap-10 sm:gap-10 ${
+          className={`grid grid-cols-2 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols-3 gap-x-56 gap-y-2 lg:gap-10 md:gap-10 sm:gap-10 ${
             buttonValue === "Front End" && "hidden"
           }`}
         >
@@ -68,40 +85,14 @@ export default function Work() {
             nameProject="Web UMKM"
             imgProject="/work-2.png"
             className="lg:w-[500px]"
-            tools={[
-              <i
-                key="icon1"
-                className="fa-brands fa-html5 text-5xl text-orange-600"
-              ></i>,
-              <i
-                key="icon2"
-                className="fa-brands fa-css3-alt text-5xl text-blue-600"
-              ></i>,
-              <i
-                key="icon3"
-                className="fa-brands fa-js text-5xl text-yellow-600"
-              ></i>,
-            ]}
+            tools={[<HtmlCssJs />]}
           />
           <Card
             link="https://hadjiporto.vercel.app/"
             nameProject="Web Portfolio"
             imgProject="/work-3.png"
             className="lg:w-[500px]"
-            tools={[
-              <i
-                key="icon1"
-                className="fa-brands fa-html5 text-5xl text-orange-600"
-              ></i>,
-              <i
-                key="icon2"
-                className="fa-brands fa-css3-alt text-5xl text-blue-600"
-              ></i>,
-              <i
-                key="icon3"
-                className="fa-brands fa-js text-5xl text-yellow-600"
-              ></i>,
-            ]}
+            tools={[<HtmlCssJs />]}
           />
           <Card
             link="https://ridho-service.vercel.app/"
@@ -112,6 +103,13 @@ export default function Work() {
               <Tool key="1" imgTool="/vite.png" />,
               <Tool key="2" imgTool="/tailwind.png" />,
             ]}
+          />
+          <Card
+            link="https://nct-sorter.vercel.app/"
+            nameProject="Mini Game"
+            imgProject="/nct.png"
+            className="lg:w-[500px]"
+            tools={[<HtmlCssJs />]}
           />
         </div>
 
