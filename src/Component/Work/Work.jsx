@@ -50,7 +50,7 @@ export default function Work() {
         {/* Front End Dev */}
 
         <div
-          className={`grid grid-cols-2 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols-3 gap-x-40 lg:gap-10 md:gap-10 sm:gap-10 ${
+          className={`grid grid-cols-2 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols-3 gap-x-56 lg:gap-10 md:gap-10 sm:gap-10 ${
             buttonValue === "Front End" && "hidden"
           }`}
         >
