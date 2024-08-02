@@ -43,14 +43,14 @@ export default function Work() {
         </span>
       </h2>
       <div
-        className={`relative mt-28 lg:mt-10 md:mt-10 flex 
+        className={`relative mt-12 lg:mt-10 md:mt-10 flex 
           overflow-auto scrollbar-transparent
        justify-center bg-slate-800 py-5 shadow-lg shadow-black`}
       >
         {/* Front End Dev */}
 
         <div
-          className={`grid grid-cols-1 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols-3 gap-5 ${
+          className={`grid grid-cols-2 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols-3 gap-x-40 ${
             buttonValue === "Front End" && "hidden"
           }`}
         >
