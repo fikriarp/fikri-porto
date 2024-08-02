@@ -6,9 +6,14 @@ export default function Card({
   className,
   nameProject,
   imgProject,
+  link,
 }) {
   return (
-    <div className="card card-work relative overflow-hidde w-[230px] lg:w-[300px] hover:drop-shadow-2xl hover:-translate-y-1">
+    <a
+      href={link}
+      target="_blank"
+      className="cursor-pointer card card-work relative overflow-hidde w-[230px] lg:w-[300px] hover:drop-shadow-2xl hover:-translate-y-1"
+    >
       <div className="flex items-center justify-center">
         <img key={key} className={`card-work ${className}`} src={imgProject} />
       </div>
@@ -18,6 +23,6 @@ export default function Card({
       <div className="flex justify-center bg-slate-950">
         <p>{nameProject}</p>
       </div>
-    </div>
+    </a>
   );
 }

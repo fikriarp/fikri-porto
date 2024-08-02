@@ -1,16 +1,28 @@
 import Card from "./Card";
 import Tool from "./Tool";
 import "../style.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Work() {
   const [buttonValue, setButtonValue] = useState("Social Media Design");
+  const [width, setWidth] = useState(window.innerWidth <= 480);
 
   function handleButtonValue() {
     setButtonValue((prevValue) =>
       prevValue === "Social Media Design" ? "Front End" : "Social Media Design"
     );
   }
+
+  // Add event listener to detect window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth <= 480);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="container text-white mt-2 text-sm font-mono">
@@ -30,9 +42,15 @@ export default function Work() {
             : " Social Media Design"}
         </span>
       </h2>
-      <div className="mt-10 flex justify-center bg-slate-800 py-5 shadow-lg shadow-black">
+      <div
+        className={`relative mt-10 flex 
+          overflow-auto scrollbar-transparent
+       justify-center bg-slate-800 py-5 shadow-lg shadow-black`}
+      >
+        {/* Front End Dev */}
+
         <div
-          className={`grid grid-cols-1 lg:grid-cols-3 gap-5 ${
+          className={`grid grid-cols-1 h-[280px] lg:grid-cols-3 gap-5 ${
             buttonValue === "Front End" && "hidden"
           }`}
         >
@@ -46,6 +64,7 @@ export default function Work() {
             ]}
           />
           <Card
+            link="https://kakis.vercel.app/"
             nameProject="Web UMKM"
             imgProject="/work-2.png"
             className="lg:w-[500px]"
@@ -65,6 +84,7 @@ export default function Work() {
             ]}
           />
           <Card
+            link="https://hadjiporto.vercel.app/"
             nameProject="Web Portfolio"
             imgProject="/work-3.png"
             className="lg:w-[500px]"
@@ -83,14 +103,26 @@ export default function Work() {
               ></i>,
             ]}
           />
+          <Card
+            link="https://ridho-service.vercel.app/"
+            nameProject="Web Company"
+            imgProject="/company.png"
+            className="lg:w-[500px]"
+            tools={[
+              <Tool key="1" imgTool="/vite.png" />,
+              <Tool key="2" imgTool="/tailwind.png" />,
+            ]}
+          />
         </div>
 
+        {/* Social Media Design */}
         <div
           className={`grid grid-cols-1 lg:grid-cols-3 gap-5 ${
             buttonValue === "Social Media Design" && "hidden"
           }`}
         >
           <Card
+            link="https://www.instagram.com/kaktus_kis/"
             nameProject="Instagram Social Media Design"
             imgProject="/sosmed-1.png"
             className="h-[200px]"

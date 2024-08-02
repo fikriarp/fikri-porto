@@ -6,13 +6,34 @@ export default {
       fontFamily: {
         kanit: ["Kanit", "sans-serif"],
       },
-      clipPath: {
-        hexagon:
-          "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
-        frame:
-          "polygon(0% 0%, 0% 100%, 2% 100%, 25% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%)",
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: "0" },
+          "50%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+      },
+      animation: {
+        infinite: "fadeIn 2s infinite",
       },
     },
   },
-  plugins: [require("tailwind-clip-path")],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".scrollbar-transparent::-webkit-scrollbar": {
+          width: "8px",
+        },
+        ".scrollbar-transparent::-webkit-scrollbar-track": {
+          background: "transparent",
+        },
+        ".scrollbar-transparent::-webkit-scrollbar-thumb": {
+          background: "rgba(0, 0, 0, 0)", // Adjust the color and transparency here
+          borderRadius: "4px",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+    require("tailwind-clip-path"),
+  ],
 };
