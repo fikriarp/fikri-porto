@@ -111,6 +111,16 @@ export default function Work() {
             className="lg:w-[500px]"
             tools={[<HtmlCssJs />]}
           />
+          <Card
+            link="https://netflix-clone-home.vercel.app/"
+            nameProject="Homepage Netflix"
+            imgProject="/netflix.png"
+            className="lg:w-[500px]"
+            tools={[
+              <Tool key="1" imgTool="/vite.png" />,
+              <i className="fa-brands fa-bootstrap text-5xl text-violet-600"></i>,
+            ]}
+          />
         </div>
 
         {/* Social Media Design */}
