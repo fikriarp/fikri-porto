@@ -67,9 +67,10 @@ export default function Work() {
         {/* Front End Dev */}
 
         <div
-          className={`grid grid-cols-2 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols-3 gap-x-56 gap-y-2 lg:gap-10 md:gap-10 sm:gap-10 ${
-            buttonValue === "Front End" && "hidden"
-          }`}
+          className={`grid grid-cols-2 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols
+         -3 gap-x-56 gap-y-2 lg:gap-10 md:gap-10 sm:gap-10 ${
+           buttonValue === "Front End" && "hidden"
+         }`}
         >
           <Card
             nameProject="Web Lowongan Kerja"
@@ -125,9 +126,10 @@ export default function Work() {
 
         {/* Social Media Design */}
         <div
-          className={`grid grid-cols-1 lg:grid-cols-3 gap-5 ${
-            buttonValue === "Social Media Design" && "hidden"
-          }`}
+          className={`grid grid-cols-2 h-[300px] lg:h-[100%] lg:grid-cols-3 md:grid-cols
+         -3 gap-x-56 gap-y-2 lg:gap-10 md:gap-10 sm:gap-10 ${
+           buttonValue === "Social Media Design" && "hidden"
+         }`}
         >
           <Card
             link="https://www.instagram.com/kaktus_kis/"
@@ -139,6 +141,12 @@ export default function Work() {
           <Card
             nameProject="Logo Design"
             imgProject="/sosmed-2.png"
+            className="h-[200px]"
+            tools={<Tool imgTool="/ai.png" />}
+          />
+          <Card
+            nameProject="Proposal Insurance"
+            imgProject="/proposal.jpg"
             className="h-[200px]"
             tools={<Tool imgTool="/ai.png" />}
           />
