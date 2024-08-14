@@ -150,6 +150,12 @@ export default function Work() {
             className="h-[200px]"
             tools={<Tool imgTool="/ai.png" />}
           />
+          <Card
+            nameProject="Logo Design"
+            imgProject="/logors.jpg"
+            className="h-[200px]"
+            tools={<Tool imgTool="/ai.png" />}
+          />
         </div>
       </div>
       <div className="absolute bottom-0 right-0 hover:drop-shadow-lg hover:-translate-y-1">
