@@ -156,6 +156,12 @@ export default function Work() {
             className="h-[200px]"
             tools={<Tool imgTool="/ai.png" />}
           />
+          <Card
+            nameProject="Social Media Design"
+            imgProject="/rsv.png"
+            className="h-[200px]"
+            tools={[<Tool imgTool="/canva.png" />, <Tool imgTool="/ai.png" />]}
+          />
         </div>
       </div>
       <div className="absolute bottom-0 right-0 hover:drop-shadow-lg hover:-translate-y-1">
